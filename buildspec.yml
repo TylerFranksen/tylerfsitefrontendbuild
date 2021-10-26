@@ -5,7 +5,7 @@ phases:
       - aws s3 cp . s3://tylerfresume/ --recursive
   post_build:
     commands:
-      - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths /*
+      - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
 artifacts:
   files:
     - '**/*'
