@@ -2,7 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws s3 cp . s3://tylerfresume/ --recursive
+      - aws s3 cp s3://tylerfresume/ . --recursive
     finally:
       - echo Executing Copy Phase Finally
   post_build:
