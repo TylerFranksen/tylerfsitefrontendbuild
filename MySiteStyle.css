@@ -1,0 +1,315 @@
+html
+{
+scroll-behavior:auto;
+}
+
+h2
+{
+    font-family: 'Oswald', sans-serif;    
+    font-size:1.8em;
+    letter-spacing:1px;
+}
+
+h3
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    font-size:1.1em;
+    font-weight:900;
+}
+
+body
+{
+    background-color:#c3e0fc8c;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0;
+}
+
+p
+{
+    font-family: 'Oswald', sans-serif;    
+    size:3px;
+    line-height:1.3em;
+    margin-bottom:0;
+}
+
+/*navigation throughout portions of the site*/
+#Directory
+{
+    padding: 30px 0;
+    background-color:#d3d3d3;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:#000000;
+}
+
+/*Linkspace is the directory's container for styling*/
+.Linkspace
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:700px;
+    margin:auto;
+}
+
+/*Nameplate is the large section with my name..*/
+#Nameplate
+{
+    display:inline-block;
+    text-align:left;
+    width:700px;
+    /*Consider spicing up the cells by adding borders and what not*/
+}
+
+/*New to CSS but I am using the . as opposed to # to represent non-unique values*/
+.Namespace
+{
+    margin: 0px 10%
+}
+
+.Name
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+    font-size:3.5rem;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.DescOfSelf
+{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:#000000;
+  font-size:1em;
+  margin-bottom:50px;  
+  text-align: left;
+}
+
+#LinesContainer
+{
+    padding: 10px;
+}
+
+#AboutMe
+{
+    display:block;
+    text-align:left;
+    margin:70px 0;
+    padding-bottom:30px;
+}
+
+.AboutMeSpace
+{
+    margin:0 10%;
+}
+
+.AboutMeBody
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    line-height:2rem;
+}
+
+#LinesContainer2
+{
+    padding: 10px;
+}
+
+#Experience
+{
+    display:block;
+    text-align:left;
+    margin:70px 0;
+    padding-bottom:30px;
+}
+
+.ExperienceSpace
+{
+    margin:0 10%;
+    padding-bottom:0px;
+}
+
+.projectSquaredVal
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+}
+
+.SqVProjectYear
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.SqVProjectDesc
+{
+    line-height:2rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.projectMySite
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+}
+
+.MySiteProjectYear
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.MySiteProjectDesc
+{
+    line-height:2rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.jobGeekSquad
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+}
+
+.GSJobYear
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.GSDesc
+{
+    line-height:2rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+#LinesContainer3
+{
+    padding: 10px;
+}
+
+#Education
+{
+    display:block;
+    text-align:left;
+    margin:70px 0;
+    padding-bottom:0px;
+}
+
+.EducationSpace
+{
+    margin:0 10%;
+}
+
+.ACGSchool
+{
+    padding-bottom:0%;
+    margin-bottom:0;
+}
+
+.ACGDesc
+{
+    font-family: 'Oswald', sans-serif;    
+    line-height:2;
+    margin-bottom:10px;
+    padding-top:0;
+    margin-top:0;
+}
+
+#LinesContainer4
+{
+    padding: 10px;
+}
+
+
+#Contacts
+{
+    display:block;
+    text-align:center;
+}
+
+.ContactSpace
+{
+    margin:0px 10%;
+    margin-bottom:30px;
+}
+
+.ContactEntry
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.Lines
+{
+    width:100%;
+    height:50px;
+    position:relative;
+}
+
+.Lines::before, .Lines::after
+{
+    content:'';
+    position:absolute;
+    margin:0;
+    background: #000000;
+    height:4px;
+    top: 45%;
+    width:48%;
+}
+
+.Lines::before
+{
+    left:0;
+}
+
+.Lines::after
+{
+    right:0;
+}
+
+.Ring
+{
+    height:50px;
+    width:50px;
+    border:2px solid #000;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border-radius:50%;
+}
+
+#Footer
+{
+    display:block;
+    padding:20px;
+    background-color:#A7ACB6;
+    text-align:center;
+
+}
+
+
+/*this section is reserved for .FooterSpace{} and its respective contents*/
+
+
+.FooterText
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}

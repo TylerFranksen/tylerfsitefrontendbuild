@@ -1,0 +1,18 @@
+version 0.2
+
+phases:
+  build:
+    commands:
+      - aws s3 cp . s3://tylerfresume/ --recursive
+    finally:
+      - echo Executing Copy Phase Finally
+  post_build:
+    commands:
+      - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths /*
+    finally:
+      - echo Executing Invalidation Phase Finally
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
