@@ -68,8 +68,9 @@ p
 /*Nameplate is the large section with my name..*/
 #Nameplate
 {
-    display:inline-block;
+    display:block;
     text-align:left;
+    margin: 0 10%;
     /*Consider spicing up the cells by adding borders and what not*/
 }
 
