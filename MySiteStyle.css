@@ -39,7 +39,7 @@ p
 /*navigation throughout portions of the site*/
 #Directory
 {
-    padding: 30px 0;
+    padding: 1px 0;
     background-color:#d3d3d3;
     border-bottom-style:solid;
     border-bottom-width:1px;
@@ -52,7 +52,7 @@ p
     display:flex;
     justify-content:center;
     align-items:center;
-    width:700px;
+    width: 300px;
     margin:auto;
     padding: 0px 0px 0px 0px;
 }
