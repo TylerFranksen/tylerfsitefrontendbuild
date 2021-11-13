@@ -310,14 +310,15 @@ p
 /*this section is reserved for .FooterSpace{} and its respective contents*/
 
 
-.FooterText
+.FooterSpace
 {
-    font-family: 'Oswald', sans-serif;    
-    color:black;
+    margin:0px 10%;
+    margin-bottom:30px;
 }
 
 #VisitorCount
 {
+    line-height:2rem;
     font-family: 'Oswald', sans-serif;    
     color:black;
 }
