@@ -1,8 +1,10 @@
 fetch('https://m7rj8l69qk.execute-api.us-east-1.amazonaws.com/Live/getcount')
-.then(function(response) {
-  return response.text();
-}).then(function(data) {
-  console.log("Total Visitors: " + data);
-}).catch(function() {
-  console.log("Booo");
+.then(function(response)
+{
+  return response.json()
+})
+.then(function(CounterInJSON)
+{
+  console.log("Visitor Count: " + CounterInJSON.VisitorCount);
+  document.querySelector("#VisitorCount").innerHTML = "Total Visitors: " + CounterInJSON.VisitorCount;
 });
