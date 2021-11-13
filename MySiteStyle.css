@@ -300,7 +300,8 @@ p
 #Footer
 {
     display:block;
-    padding-bottom:10px;
+    padding-top: 5px;
+    padding-bottom:5px;
     background-color:#A7ACB6;
     text-align:center;
 
