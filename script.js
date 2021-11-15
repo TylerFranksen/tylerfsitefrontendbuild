@@ -5,6 +5,6 @@ fetch('https://m7rj8l69qk.execute-api.us-east-1.amazonaws.com/Live/getcount')
 })
 .then(function(CounterInJSON)
 {
-  console.log("Visitor Count: " + CounterInJSON.VisitorCount);
+  console.log(CounterInJSON);
   document.querySelector("#VisitorCount").innerHTML = "Total Visitors: " + CounterInJSON.VisitorCount;
 });
