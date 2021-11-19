@@ -78,17 +78,20 @@
                 <h3 class="projectMySite">This Website</h3>
                 <p class="MySiteProjectYear">2021</p>
                 <p class="MySiteProjectDesc">
-                    I have first quickly drafted this website with some small details that I hope prove I at least subtly know what I
-                    am doing. This website has separate CI/CD automated deployments for its front and back-ends respectively. This website is also connected internally with AWS services.
+                    My website is meant to be a constant work in progress, so please keep in mind this summary is just for the resume portion of the site.
+                    The contents of the webpage are all hosted in an S3 bucket with automated CI/CD deployments for updating/religating versions of the vital file structure within the bucket.
+                    This website utilizes Lambda/DynamoDB/JavaScript to count the number of visitors the site has received. In order to achieve this, a Lambda function first requests
+                    the contents of a data table hosted in DynamoDB and checks the value for an internal parameter to see the current visit count. The function then adds 1 to the value of the 
+                    contained parameter and sends it back to the DynamoDB table, JavaScript is used to find the value within HTML that we are inserting the DynamoDB Visitor Count contents into.
                 </p>
                 <h3 class="jobGeekSqd">Geek Squad Consultation/Repair Agent</h3>
                 <p class="GSJobYear">2019 - Current</p> 
                 <p class="GSDesc">
-                    My job at Geek Squad I put on this list because it is the first job Ive had within the IT industry and yet it has significantly bolstered my confidence within it. 
-                    Working through the pandemic gave me the experience I need to work remotely and yet confidently, coupled with the knowledge I have can manage to help customers fast
-                    and still efficiently. whether it is operating system environment knowledge or ability to meet customer expectations within a deadline I have found that Geek Squad 
-                    will have been the first jobs to open my eyes to a lot of these things.
-                </p>   
+                    Learned to meet customer expectations verbatim and within a given deadline. 
+                    <br>Developed skills in establishing and maintaining lasting positive customer/coworker relationships. 
+                    <br>Cemented knowledge of many operating systems and popular software. 
+                    <br>Handled private and personal data in a secure manner
+                </p>
             </div>
         </section>
 
@@ -103,7 +106,14 @@
             <div class="EducationSpace">
                 <h2 class="EducationHead">Education</h2>
                 <h3 class="ACGSchool">ACloudGuru</h3>
-                <p class="ACGDesc">I used this course in order to study and pass my Solutions Architect Certification test.</p>
+                <p class="ACGDesc">I was initially recommended this course from a friend who had been studying AWS themselves and really took a
+                    liking to the method of teaching provided. I used the Solutions Architect course as a tool to study for my certification exam
+                </p>
+                <h3 class="Mizzou">University of Missouri - Columbia</h3>
+                <p class="MizzouDesc">I briefly attended the University of Missouri with the original intention of studying Mechanical Engineering. 
+                    I quickly discovered a disconnect with the major and switched to Computer Engineering. While studying Computer Engineering I
+                    managed to learn a sizable portion of basic coding and algorithm-based programming in C. 
+                </p>
                 <a href="#"></a>    <!-- This link will later be used to validate your status with AWS certifications through credly or some other source -->
             </div>
         </section>
