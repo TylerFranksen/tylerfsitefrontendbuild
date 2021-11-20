@@ -68,7 +68,8 @@ p
     width: auto;
     height: auto;
     font-size: 32px;
-    padding-left: 760px;
+    /*Padding left value needs to be applicable for multiple platforms*/
+    padding-left: 30%;
     padding-top: 36px;
     padding-bottom: 36px;
 }
