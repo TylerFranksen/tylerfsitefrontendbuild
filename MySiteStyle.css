@@ -47,6 +47,9 @@ p
     border-bottom-color:#000000;
 }
 
+.link { color: #007575; }
+.link:hover { color: #702963; }
+
 .WatermarkSpace
 {
     width: auto;
