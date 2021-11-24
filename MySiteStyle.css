@@ -238,7 +238,22 @@ p
 .ACGDesc
 {
     font-family: 'Oswald', sans-serif;    
-    line-height:2;
+    line-height:2rem;
+    margin-bottom:10px;
+    padding-top:0;
+    margin-top:0;
+}
+
+.MUSchool
+{
+    padding-bottom:0%;
+    margin-bottom:0;
+}
+
+.MUDesc
+{
+    font-family: 'Oswald', sans-serif;    
+    line-height:2rem;
     margin-bottom:10px;
     padding-top:0;
     margin-top:0;
