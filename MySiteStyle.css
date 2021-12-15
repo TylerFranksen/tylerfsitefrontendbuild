@@ -36,9 +36,8 @@ p
     line-height:1.3em;
     margin-bottom:0;
 }
-
-/*navigation throughout portions of the site*/
-#Directory
+/*The space in which the directory's content will reside*/
+#DirectorySpace
 {
     display: flex;
     height:90px;
@@ -49,10 +48,12 @@ p
     border-bottom-color:#000000;
 }
 
+/*This handy little trick makes links you hover over glow a special color when hovered over*/
 .link { color: #007575; }
 .link:hover { color: #702963; }
 
-.WatermarkSpace
+/*A T symbol I made in photoshop that I liked enough to place in projects*/
+.Watermark
 {
     width: auto;
     height: auto;
@@ -62,8 +63,8 @@ p
     padding-left: 40px;
 }
 
-/*Linkspace is the directory's container for styling*/
-.Linkspace
+/*navigation section allows for a clickable link to different sections of the page*/
+.Directory
 {
     display: inline-block;
     vertical-align: top;
@@ -78,7 +79,7 @@ p
 }
 
 /*Nameplate is the large section with my name..*/
-#Nameplate
+#NameSpace
 {
     display:block;
     text-align:left;
@@ -86,6 +87,7 @@ p
     /*Consider spicing up the cells by adding borders and what not*/
 }
 
+/*Large name section within Namespace that denotes a highly employable individual <3 */
 .Name
 {
     font-family: 'Oswald', sans-serif;    
@@ -96,6 +98,7 @@ p
     letter-spacing:2px;
 }
 
+/*Responsible for styling the smaller portion of text just underneath my name*/
 .DescOfSelf
 {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -104,7 +107,7 @@ p
   margin-bottom:50px;
 }
 
-#LinesContainer
+#DividerSpace0
 {
     padding: 10px;
 }
@@ -129,7 +132,7 @@ p
     line-height:2rem;
 }
 
-#LinesContainer2
+#DividerSpace1
 {
     padding: 10px;
 }
@@ -211,7 +214,7 @@ p
     color:black;
 }
 
-#LinesContainer3
+#DividerSpace2
 {
     padding: 10px;
 }
@@ -259,7 +262,7 @@ p
     margin-top:0;
 }
 
-#LinesContainer4
+#DividerSpace3
 {
     padding: 10px;
 }
@@ -283,14 +286,14 @@ p
     color:black;
 }
 
-.Lines
+.Line
 {
     width:100%;
     height:50px;
     position:relative;
 }
 
-.Lines::before, .Lines::after
+.Line::before, .Line::after
 {
     content:'';
     position:absolute;
@@ -301,12 +304,12 @@ p
     width:48%;
 }
 
-.Lines::before
+.Line::before
 {
     left:0;
 }
 
-.Lines::after
+.Line::after
 {
     right:0;
 }
