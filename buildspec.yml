@@ -18,6 +18,7 @@ phases:
 
   post-build:
     commands:
+      - echo Creating CloudFront Invalidation
       - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
 
 artifacts:
