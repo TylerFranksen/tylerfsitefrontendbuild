@@ -22,7 +22,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: '/tylerfsitefrontendrepo'
   discard-paths: yes
 
   include:
