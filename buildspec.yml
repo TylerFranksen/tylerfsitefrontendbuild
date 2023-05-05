@@ -1,33 +1,30 @@
 version: 0.2
 
 phases:
+  build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 cp . s3://tylerfresume/ --recursive
   install:
     runtime-versions:
       nodejs: 14
     commands:
       - echo Installing dependencies...
       - npm install
+  post-build:
+  commands:
+    - echo Creating CloudFront Invalidation
+    - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
+
   pre_build:
     commands:
       - echo Building the application...
       - npm run build
-  build:
-    commands:
-      - echo Build completed on `date`
-      - aws s3 cp . s3://tylerfresume/ --recursive
-
-  post-build:
-    commands:
-      - echo Creating CloudFront Invalidation
-      - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
-
 artifacts:
   files:
     - '**/*'
   base-directory: 'path/to/your/project'
   discard-paths: yes
-  # Include files from specific subfolders
-  # Modify these paths to match your project structure
   include:
     - 'iam/**'
     - 'images/**'
