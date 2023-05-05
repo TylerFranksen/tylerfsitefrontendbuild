@@ -28,4 +28,3 @@ artifacts:
     - 'iam/**'
     - 'images/**'
     - 'js/**'
-    - 'css/**'
