@@ -16,7 +16,7 @@ phases:
       - echo Build completed on `date`
       - aws s3 cp . s3://tylerfresume/ --recursive
 
-  post-build:
+  post_build:
     commands:
       - echo Creating CloudFront Invalidation
       - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
