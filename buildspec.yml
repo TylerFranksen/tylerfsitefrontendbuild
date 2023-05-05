@@ -12,9 +12,9 @@ phases:
       - echo Installing dependencies...
       - npm install
   post-build:
-  commands:
-    - echo Creating CloudFront Invalidation
-    - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
+    commands:
+      - echo Creating CloudFront Invalidation
+      - aws cloudfront create-invalidation --distribution-id EMTJQND3ELN13 --paths '/*'
 
   pre_build:
     commands:
