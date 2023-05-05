@@ -1,150 +1,245 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>
-            -Tyler Franksen-
-        </title>
-        <link rel="stylesheet" href="MySiteStyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    </head>
-        <!-- This Header section will be bolder in CSS and the description of self section should match font size with all other subsections description of self section-->
-        
-    <body>
+    <div class="Webpage">
+        <head>
+            <title>
+                -Tyler Franksen-
+            </title>
+            <link rel="stylesheet" href="MySiteStyle.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        </head>
+            <!-- This Header section will be bolder in CSS and the description of self section should match font size with all other subsections description of self section-->
+            
+        <body>
 
-        <section id="DirectorySpace">
-            <div class="Watermark">
-                <img 
-                width="80px"
-                height="80px" 
-                src="Ticon.png"
-                alt="MyWatermark"
-                />
-            </div>
-            <div class="Directory">
-                <a class= "link" href="#About Me">About Me</a>
-                <a class= "link" href="#Experience">Experience</a>
-                <a class= "link" href="#Education">Education</a>
-                <a class= "link" href="#Contacts">Contacts</a>
-            </div>
-            <div class="LinkedInIcon">
-                    <a href="https://www.linkedin.com/in/tyler-franksen-3b0678218">
-                        <img alt="LinkedIn" src="LinkedinBlack.png" height=60px></img>
-                    </a>
+            <section id="DirectorySpace">
+                <div class="Watermark">
+                    <img 
+                    width="80px"
+                    height="80px" 
+                    src="Ticon.png"
+                    alt="MyWatermark"
+                    />
                 </div>
-        </section>
-
-        <section id="NameSpace">
-            <p class="Name">Tyler Franksen</p>
-            <p class="DescOfSelf">Seeking employment in Certified Solutions Architecture</p>
-        </section>
-
-        <section id="DividerSpace0">
-            <div class="Line">
-                <div class="Ring">
+                <div class="Directory">
+                    <a class= "link" href="#About Me">About Me</a>
+                    <a class= "link" href="#Experience">Experience</a>
+                    <a class= "link" href="#Education">Education</a>
+                    <a class= "link" href="#Contacts">Contacts</a>
                 </div>
-            </div>
-        </section>
+                <div class="LinkedInIcon">
+                        <a href="https://www.linkedin.com/in/tyler-franksen-3b0678218">
+                            <img alt="LinkedIn" src="LinkedinBlack.png" height=60px></img>
+                        </a>
+                    </div>
+            </section>
 
-        <section id="AboutMe">
-            <div class="AboutMeSpace">
-                <h2 class="AboutMeHeader">About Me</h2>
-                <p class="AboutMeBody">
-                    I am a certified cloud solutions architect that overindulges in learning about
-                    programming, web design, and game design. I have demonstrable skills
-                    with teamwork, architecture, and achieving time-sensitive goals based on my
-                    personal work habits.
-                </p>
-            </div>
-        </section>
+            <section id="NameSpace">
+                <p class="Name">Tyler Franksen</p>
+                <p class="DescOfSelf">Certified Solutions Architect Seeking Opportunities!</p>
+            </section>
 
-        <section id="DividerSpace1">
-            <div class="Line">
-                <div class="Ring">
+    <!--        <section id="DividerSpace0">
+                <div class="Line">
+                    <div class="Ring">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section> -->
+            <section id="LeftSpace">
+                <section id="AboutMe">
+                    <div class="AboutMeSpace">
+                        <h2 class="AboutMeHeader">About Me</h2>
+                        <p class="AboutMeBody">
+                            I am a certified cloud solutions architect that overindulges in learning about
+                            programming, web design, and game design. I have demonstrable skills
+                            with teamwork, architecture, and achieving time-sensitive goals based on my
+                            personal work habits. Some of my strongest points include my experience with Python and associated libraries (Pandas, NumPy, Boto3, PyTorch, etc.)
+                        </p>
+                    </div>
+                </section>
 
-        <section id="Experience">
-            <div class="ExperienceSpace">
-                <h2 class="ExperienceHeader">Experience</h2>
-                <h3 class="projectSquaredVal">SquaredVal Project</h3>
-                <p class="SqVProjectYear">2021</p>
-                <p class="SqVProjectDesc">
-                    This project was done with a group of friends when we started getting more familiar with the AWS environment. We wanted to complete a project that would demonstrate our ability to work
-                    together as a team in order to have individual goals collaborate towards achieving something greater. We created a website through which the API can receive user-input numbers through
-                    path-based URL entry in order to have the website return the number to lambda, have it square the value provided, and then turn around and send that number back to the API as well a saved
-                    log sent to RDS. I developed the simple Flask application that would actually interpret a provided response as well as the GitRepositories for this project in order to later setup much 
-                    cleaner versioning and logging.
-                </p>
-                <h3 class="projectMySite">This Website</h3>
-                <p class="MySiteProjectYear">2021</p>
-                <p class="MySiteProjectDesc">
-                    My website is meant to be a constant work in progress, so please keep in mind this summary is just for the resume portion of the site.
-                    The contents of the webpage are all hosted in an S3 bucket with automated CI/CD deployments for updating/religating versions of the vital file structure within the bucket.
-                    This website utilizes Lambda/DynamoDB/JavaScript to count the number of visitors the site has received. In order to achieve this, a Lambda function first requests
-                    the contents of a data table hosted in DynamoDB and checks the value for an internal parameter to see the current visit count. The function then adds 1 to the value of the 
-                    contained parameter and sends it back to the DynamoDB table, JavaScript is used to find the value within HTML that we are inserting the DynamoDB Visitor Count contents into.
-                </p>
-                <h3 class="jobGeekSqd">Geek Squad Consultation/Repair Agent</h3>
-                <p class="GSJobYear">2019 - Current</p> 
-                <p class="GSDesc">
-                    Learned to meet customer expectations verbatim and within a given deadline. 
-                    <br>Developed skills in establishing and maintaining lasting positive customer/coworker relationships. 
-                    <br>Cemented knowledge of many operating systems and popular software. 
-                    <br>Handled private and personal data in a secure manner
-                </p>
-            </div>
-        </section>
+        <!--        <section id="DividerSpace1">
+                    <div class="Line">
+                        <div class="Ring">
+                        </div>
+                    </div>
+                </section> -->
 
-        <section id="DividerSpace2">
-            <div class="Line">
-                <div class="Ring">
+                <section id="Experience">
+                    <div class="ExperienceSpace">
+                        <h2 class="ExperienceHeader">Experience</h2>
+                        <h3 class="projectSquaredVal">SquaredVal Project</h3>
+                        <p class="SqVProjectYear">2022</p>
+                        <p class="SqVProjectDesc">
+                            This project was done with a group of friends when we started getting more familiar with the AWS environment. We wanted to complete a project that would demonstrate our ability to work
+                            together as a team in order to have individual goals collaborate towards achieving something greater. We created a website through which an API can receive user-input numbers through
+                            path-based URL entry in order to have the website return the number to lambda, have it square the value provided, and then turn around and send that number back to the API as well a saved
+                            log sent to RDS. I developed the simple Flask application that would actually interpret a provided response as well as the GitRepositories for this project in order to later setup much 
+                            cleaner versioning and logging.
+                        </p>
+                        <h3 class="ETLPipelineProject">FBI ETL Pipeline</h3>
+                        <p class="ETLProjYear">2022</p>
+                        <p class="ETLProjDesc">
+                            This project was multiple passions conglomerated, I wanted to develop a serverless and automated method for accurately measuring
+                            how many people in the US have a firearm and what kind potentially.
+                            I originally wanted to see how many people were possibly owning a firearm in the United States, and that eventually brought me
+                            to researching the background check process and how intertwined it is with owning a firearm. 
+                            The pipeline scrapes data from the NCIS report which gets updated every few weeks and updates a DynamoDB table with proper attributes
+                            for tracking citizens and their respective firearms purchases. This does not tell me how many guns one citizen owns but rather, total owned
+                            for each category of firearm/transaction in each state for each month of the year.
+                        </p>
+
+                        <h3 class="projectMySite">This Serverless Resume Site</h3>
+                        <p class="MySiteProjectYear">2022</p>
+                        <p class="MySiteProjectDesc">
+                            My website is meant to be a constant work in progress, so please keep in mind this summary is just for the resume portion of the site.
+                            The contents of the webpage are all hosted in an S3 bucket with automated CI/CD deployments for updating/religating versions of the vital file structure within the bucket.
+                            This website utilizes Lambda/DynamoDB/JavaScript to count the number of visitors the site has received. In order to achieve this, a Lambda function first requests
+                            the contents of a data table hosted in DynamoDB and checks the value for an internal parameter to see the current visit count. The function then adds 1 to the value of the 
+                            contained parameter and sends it back to the DynamoDB table, JavaScript is used to find the value within HTML that we are inserting the DynamoDB Visitor Count contents into.
+                        </p>
+                        <h3 class="jobGeekSqd">Geek Squad Advanced Repair Agent</h3>
+                        <p class="GSJobYear">2020 - Current</p> 
+                        <p class="GSDesc">
+                            Learned to meet customer expectations verbatim and within a given deadline. 
+                            <br>Developed skills in establishing and maintaining lasting positive customer/coworker relationships. 
+                            <br>Cemented knowledge of many operating systems and popular software. 
+                            <br>Handled private and personal data in a secure manner
+                        </p>
+                    </div>
+                </section>
+
+        <!--        <section id="DividerSpace2">
+                    <div class="Line">
+                        <div class="Ring">
+                        </div>
+                    </div>
+                </section> -->
+
+                <section id="Education">
+                    <div class="EducationSpace">
+                        <h2 class="EducationHead">Education</h2>
+                        <h3 class="ACGSchool">ACloudGuru</h3>
+                        <p class="ACGDesc">I was initially recommended this course from a friend who had been studying AWS themselves and really took a
+                            liking to the method of teaching provided. I used the Solutions Architect course as a tool to study for my certification exam
+                        </p>
+                        <h3 class="MUSchool">University of Missouri - Columbia</h3>
+                        <p class="MUDesc">Briefly attended the University of Missouri with my desired major being Mechanical Engineering 
+                            <br>Quickly lost interest in that major and switched to Computer Engineering
+                            <br>While studying Computer Engineering I managed to learn a sizable portion of basic coding and algorithm-based programming in C
+                        </p>
+                        <h2 class="CodeCademy">CodeCademy</h2>
+                        <p class="CCDesc">I have been taking online courses through Codecademy in order to further my knowledge within the field. So far I have
+                            completed their certification courses for Python & SQL with plans to undergo learning ReactJS next
+                        </p>
+                        <a href="#"></a>    <!-- This link will later be used to validate your status with AWS certifications through credly or some other source -->
+                    </div>
+                </section>
+            </section>    
+    <!--        <section id="DividerSpace3">
+                <div class="Line">
+                    <div class="Ring">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section> -->
+    
+            <section id="RightSpace">
+                <section id="NotableSkillsSpace">
+                    <p class="NotableSkillsHeader">Notable Skills</p>
 
-        <section id="Education">
-            <div class="EducationSpace">
-                <h2 class="EducationHead">Education</h2>
-                <h3 class="ACGSchool">ACloudGuru</h3>
-                <p class="ACGDesc">I was initially recommended this course from a friend who had been studying AWS themselves and really took a
-                    liking to the method of teaching provided. I used the Solutions Architect course as a tool to study for my certification exam
-                </p>
-                <h3 class="MUSchool">University of Missouri - Columbia</h3>
-                <p class="MUDesc">Briefly attended the University of Missouri with my desired major being Mechanical Engineering 
-                    <br>Quickly lost interest in that major and switched to Computer Engineering
-                    <br>While studying Computer Engineering I managed to learn a sizable portion of basic coding and algorithm-based programming in C
-                </p>
-                <a href="#"></a>    <!-- This link will later be used to validate your status with AWS certifications through credly or some other source -->
-            </div>
-        </section>
+                    <p>Python</p>
+                    <div class="SkillContainer">
+                        <div class="Skills Python">60%</div>
+                    </div>
 
-        <section id="DividerSpace3">
-            <div class="Line">
-                <div class="Ring">
+                    <p>HTML</p>
+                    <div class="SkillContainer">
+                        <div class="Skills HTML">70%</div>
+                    </div>  
+
+                    <p>CSS</p>
+                    <div class="SkillContainer">
+                        <div class="Skills CSS">70%</div>
+                    </div>     
+
+                    <p>Javascript</p>
+                    <div class="SkillContainer">
+                        <div class="Skills JS">60%</div>
+                    </div>   
+
+                    <p>C</p>
+                    <div class="SkillContainer">
+                        <div class="Skills BaseC">50%</div>
+                    </div>
+                    
+                    <p>C++</p>
+                    <div class="SkillContainer">
+                        <div class="Skills Cpp">40%</div>
+                    </div>
+                    
+                    <p>C#</p>
+                    <div class="SkillContainer">
+                        <div class="Skills Csharp">20%</div>
+                    </div> 
+
+                    <p>Terraform</p>
+                    <div class="SkillContainer">
+                        <div class="Skills Terraform">50%</div>
+                    </div>         
+
+                    <p>Step Functions</p>
+                    <div class="SkillContainer">
+                        <div class="Skills StepFunctions">40%</div>
+                    </div>    
+
+                    <p>AWS SAM</p>
+                    <div class="SkillContainer">
+                        <div class="Skills AWSSAM">20%</div>
+                    </div>    
+
+                    <p>AWSGlue</p>
+                    <div class="SkillContainer">
+                        <div class="Skills AWSGlue">50%</div>
+                    </div>
+
+                    <p>DynamoDB</p>
+                    <div class="SkillContainer">
+                        <div class="Skills DynamoDB">70%</div>
+                    </div>
+                    
+                    <p>SQL</p>
+                    <div class="SkillContainer">
+                        <div class="Skills SQL">30%</div>
+                    </div>
+                    
+                    <p>Loading Bar Fervor</p>
+                    <div class="SkillContainer">
+                        <div class="Skills TestJoke">100% !!!</div>
+                    </div> 
+
+                </section>
+            </section>
+
+            <section id="Contacts">
+                <div class="ContactSpace">
+                    <h2 class="ContactHead">Contacts</h2>
+                    <p class="ContactEntry">Tyler Franksen
+                        <br>Platte City, Missouri, US 
+                        <br>tylerfranksen@rocketmail.com
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="Contacts">
-            <div class="ContactSpace">
-                <h2 class="ContactHead">Contacts</h2>
-                <p class="ContactEntry">Tyler Franksen
-                    <br>Platte City, Missouri, US 
-                    <br>tylerfranksen@rocketmail.com
-                </p>
-            </div>
-        </section>
-
-        <section id="Footer">
-            <div class="FooterSpace">
-                <section id="VisitorCount">
-                    <script src="script.js">
-                    </script>
-                </section>  
-            </div>
-        </section>
-    </body>
+            <section id="Footer">
+                <div class="FooterSpace">
+                    <section id="VisitorCount">
+                        <script src="script.js">
+                        </script>
+                    </section>  
+                </div>
+            </section>
+        </body>
+    </div>
 </html>

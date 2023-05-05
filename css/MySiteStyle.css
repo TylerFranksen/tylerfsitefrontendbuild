@@ -1,7 +1,9 @@
+* {box-sizing:border-box}
+
 html
 {
-scroll-behavior:auto;
-height: 100%;
+    scroll-behavior:auto;
+    height: 100%;
 }
 
 h2
@@ -36,6 +38,12 @@ p
     line-height:1.3em;
     margin-bottom:0;
 }
+
+#Webpage
+{
+    width: auto;
+    height: auto;
+}
 /*The space in which the directory's content will reside*/
 #DirectorySpace
 {
@@ -47,6 +55,7 @@ p
     border-bottom-style:solid;
     border-bottom-width:2px;
     border-bottom-color:#000000;
+    text-align: center;
 }
 
 /*This handy little trick makes links you hover over glow a special color when hovered over*/
@@ -61,7 +70,6 @@ p
     display: inline-block;
     vertical-align: top;
     margin: 5px;
-    padding-left: 40px;
 }
 
 /*navigation section allows for a clickable link to different sections of the page*/
@@ -80,33 +88,53 @@ p
 .LinkedInIcon
 {
     width: auto;
-    height: auto;
+    height: 60px;
     display: inline-block;
     vertical-align: center;
     margin: 5px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+#LeftSpace
+{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+
+#RightSpace
+{
+    display:inline-block;
+    width: 39.5%;
+    vertical-align: top;
+    text-align: left;
+    padding-right: 5%;
 }
 
 /*Nameplate is the large section with my name..*/
 #NameSpace
 {
-    display:block;
-    text-align:left;
-    margin: 0 10%;
-    /*Consider spicing up the cells by adding borders and what not*/
+    display:inline-block;
+    text-align:center;
+    vertical-align: top;
+    width: 100%;
 }
+    /*Consider spicing up the cells by adding borders and what not*/
+
 
 /*Large name section within Namespace that denotes a highly employable individual <3 */
 .Name
 {
+    display:inline-block;
     font-family: 'Oswald', sans-serif;    
     color:black;
     color:#000000;
     font-size:3.5rem;
     font-weight:bold;
     letter-spacing:2px;
+    margin-top: 0;
 }
 
 /*Responsible for styling the smaller portion of text just underneath my name*/
@@ -115,8 +143,59 @@ p
   font-family:Georgia, 'Times New Roman', Times, serif;
   color:#000000;
   font-size:1em;
-  margin-bottom:50px;
+  margin-bottom:20px;
+  width: auto;
+  text-align:center;
 }
+
+#NotableSkillsSpace
+{
+    width: 100%;
+}
+  
+.NotableSkillsHeader
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    padding-bottom: 10px;
+}
+
+.SkillContainer
+{
+    height:auto;
+    width: 100%;
+    background: #d3d3d3;
+}
+
+.Skills
+{
+    text-align: right;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+.Python{width: 60%; background-color: green;}
+.HTML{width: 70%; background-color: red;}
+.CSS{width: 70%; background-color: orange;}
+.JS{width: 60%; background-color: yellow;}
+.BaseC{width: 50%; background-color: blue;}
+.Cpp{width: 40%; background-color: blue;}
+.Csharp{width: 20%; background-color: blue;}
+.Terraform{width: 50%; background-color: indigo}
+.StepFunctions{width: 40%; background-color: violet;}
+.AWSSAM{width: 20%; background-color: brown;}
+.AWSGlue{width: 50%; background-color: black;}
+.DynamoDB{width: 70%; background-color: red;}
+.SQL{width: 30%; background-color: teal;}
+.TestJoke{width: 100%; background-color: teal;}
+
+
+
+
+
 
 #DividerSpace0
 {
@@ -125,15 +204,13 @@ p
 
 #AboutMe
 {
-    display:block;
+    display: inline-block;
+    vertical-align: top;
     text-align:left;
-    margin:70px 0;
-    padding-bottom:30px;
 }
 
 .AboutMeSpace
 {
-    margin:0 10%;
 }
 
 .AboutMeBody
@@ -150,16 +227,12 @@ p
 
 #Experience
 {
-    display:block;
+    display: inline-block;
     text-align:left;
-    margin:70px 0;
-    padding-bottom:30px;
 }
 
 .ExperienceSpace
 {
-    margin:0 10%;
-    padding-bottom:0px;
 }
 
 .projectSquaredVal
@@ -183,6 +256,25 @@ p
     color:black;
 }
 
+.ETLPipelineProject
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+}
+.ETLProjYear
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+.ETLProjDesc
+{
+    line-height:2rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+    
 .projectMySite
 {
     font-family: 'Oswald', sans-serif;    
@@ -234,43 +326,37 @@ p
 {
     display:block;
     text-align:left;
-    margin:70px 0;
-    padding-bottom:0px;
 }
 
 .EducationSpace
 {
-    margin:0 10%;
+    display: inline-block;
 }
 
 .ACGSchool
 {
-    padding-bottom:0%;
-    margin-bottom:0;
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
 }
 
 .ACGDesc
 {
     font-family: 'Oswald', sans-serif;    
     line-height:2rem;
-    margin-bottom:10px;
-    padding-top:0;
-    margin-top:0;
 }
 
 .MUSchool
 {
-    padding-bottom:0%;
-    margin-bottom:0;
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
 }
 
 .MUDesc
 {
     font-family: 'Oswald', sans-serif;    
     line-height:2rem;
-    margin-bottom:10px;
-    padding-top:0;
-    margin-top:0;
 }
 
 #DividerSpace3
