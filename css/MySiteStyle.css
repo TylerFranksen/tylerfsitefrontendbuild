@@ -180,7 +180,8 @@ p
 .Python{width: 60%; background-color: green;}
 .HTML{width: 70%; background-color: red;}
 .CSS{width: 70%; background-color: orange;}
-.JS{width: 60%; background-color: yellow;}
+.JS{width: 60%; background-color: rgb(215, 240, 69);}
+.ReactJS{width: 15%; background-color: rgb(215, 240, 69);}
 .BaseC{width: 50%; background-color: blue;}
 .Cpp{width: 40%; background-color: blue;}
 .Csharp{width: 20%; background-color: blue;}
@@ -191,11 +192,8 @@ p
 .DynamoDB{width: 70%; background-color: red;}
 .SQL{width: 30%; background-color: teal;}
 .TestJoke{width: 100%; background-color: teal;}
-
-
-
-
-
+.MSAzure{width: 5%; background-color: green;}
+.GCP{width: 5%; background-color: orange;}
 
 #DividerSpace0
 {
