@@ -357,6 +357,18 @@ p
     line-height:2rem;
 }
 
+.WGUSchool
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.WGUDesc
+{    
+    font-family: 'Oswald', sans-serif;    
+    line-height:2rem;
+}
 #DividerSpace3
 {
     padding: 10px;
