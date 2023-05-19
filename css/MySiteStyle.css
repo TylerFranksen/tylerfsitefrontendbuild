@@ -352,19 +352,6 @@ p
     display: inline-block;
 }
 
-.ACGSchool
-{
-    line-height:.5rem;
-    font-family: 'Oswald', sans-serif;    
-    color:black;
-}
-
-.ACGDesc
-{
-    font-family: 'Oswald', sans-serif;    
-    line-height:2rem;
-}
-
 .MUSchool
 {
     line-height:.5rem;
@@ -390,6 +377,20 @@ p
     font-family: 'Oswald', sans-serif;    
     line-height:2rem;
 }
+
+.ACGSchool
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.ACGDesc
+{
+    font-family: 'Oswald', sans-serif;    
+    line-height:2rem;
+}
+
 #DividerSpace3
 {
     padding: 10px;
