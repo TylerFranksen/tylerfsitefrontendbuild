@@ -294,6 +294,27 @@ p
     color:black;
 }
 
+.projectMassEmail
+{
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+    color:#000000;
+}
+
+.MassEmailYear
+{
+    line-height:.5rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
+.MassEmailDesc
+{
+    line-height:2rem;
+    font-family: 'Oswald', sans-serif;    
+    color:black;
+}
+
 .jobGeekSquad
 {
     font-family: 'Oswald', sans-serif;    
